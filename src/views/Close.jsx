@@ -6,7 +6,7 @@ function Close(){
       const points = JSON.parse(localStorage.getItem('points')).filter(point => point.isBg == true)
       if (!points.length) {
         localStorage.setItem('points', JSON.stringify([{ id: 1, isBg: true }, { id: 2, isBg: true }, { id: 3, isBg: true }, { id: 4, isBg: true },]))
-        location.replace('/')
+        window.location.replace('/')
       }
     },[])
 
