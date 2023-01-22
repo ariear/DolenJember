@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url('/assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main{
+    padding: 250px 0px;
+}
+.main-content{
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 460px) {
+    .main-content{
+        padding: 0px 10px;
+    }
+    .btn:nth-child(2){
+        margin: 0px;
+    }
+    .btn{
+        margin: 10px;
+    }
+}
+.main-content h1{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.wrap-btn{
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    width: max-content;
+    padding: 12px 40px;
+    border-radius: 5px;
+    background-color: #FFCAC8;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.btn:nth-child(2){
+    margin: 0px 30px;
+}
+
+.wrap-point{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    .wrap-point{
+        bottom: 20px;
+        right: 20px;
+    }
+}
+.wrap-point p{
+    margin-bottom: 15px;
+}
+.wrap-circle{
+    display: flex;
+    align-items: center;
+}
+.circle{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.terbg{
+    background-color: white;
+}
+
+.main-desti{
+    padding: 100px 0;
+}
+.wrap-card-desti{
+    margin: 40px auto;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1100px) {
+    .wrap-card-desti{
+        width: 90vw;
+    }
+}
+.card-desti img{
+    width: 330px;
+}
+.card-oleh img{
+    width: 250px;
+}
+.card-desti, .card-oleh{
+    margin: 10px;
+    width: max-content;
+    border-radius: 5px;
+    background: #FFCAC8;
+    text-align: start;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-desti p, .card-oleh p{
+    padding: 15px;
+}
+
+.alert{
+    z-index: 10;
+    width: max-content;
+    height: max-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    background: #7CF9AE;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+.alert p{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.wrap-alert-btn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bg-alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000002a;
+}
